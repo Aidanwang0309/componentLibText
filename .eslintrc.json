@@ -1,0 +1,193 @@
+{
+	"env": {
+		"browser": true,
+		"commonjs": true,
+		"es2021": true,
+		"jest": true
+	},
+	"extends": [
+		"airbnb-base",
+		"eslint:recommended",
+		"plugin:import/recommended",
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended",
+		"prettier",
+		"prettier/react",
+		"prettier/@typescript-eslint"
+	],
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"project": "./tsconfig.json",
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": [
+		"react",
+		"prettier",
+		"@typescript-eslint",
+		"react-hooks"
+	],
+	"rules": {
+		"semi": 0,
+		"eqeqeq": [
+			1,
+			"always"
+		],
+		"quotes": [
+			1,
+			"double"
+		],
+		"jsx-quotes": [
+			2,
+			"prefer-double"
+		],
+		"no-undef": 0,
+		"no-console": 1,
+		"no-unused-vars": 0,
+		"no-mixed-operators": 0,
+		"eol-last": [
+			2,
+			"always"
+		],
+		"no-confusing-arrow": 0,
+		"arrow-parens": [
+			2,
+			"always"
+		],
+		"arrow-spacing": [
+			"error",
+			{
+				"before": true,
+				"after": true
+			}
+		],
+		"arrow-body-style": [
+			2,
+			"as-needed"
+		],
+		"import/extensions": 0,
+		"no-extra-parens": [
+			"warn",
+			"functions",
+			{
+				"conditionalAssign": false,
+				"returnAssign": false,
+				"nestedBinaryExpressions": false,
+				"ignoreJSX": "none",
+				"enforceForArrowConditionals": false
+			}
+		],
+		"no-param-reassign": 0,
+		"prefer-template": 0,
+		"prefer-promise-reject-errors": 0,
+		"no-script-url": 0,
+		"no-unused-expressions": 1,
+		"no-use-before-define": 0,
+		"consistent-return": 0,
+		"no-template-curly-in-string": 1,
+		"import/no-named-default": 1,
+		"react/no-array-index-key": 1,
+		"camelcase": 1,
+		"no-underscore-dangle": 1,
+		"prefer-destructuring": 1,
+		"global-require": 1,
+		"no-useless-escape": 1,
+		"import/prefer-default-export": 0,
+		"import/no-useless-path-segments": 1,
+		"import/no-unresolved": 0,
+		"import/no-extraneous-dependencies": 0,
+		"import/no-named-as-default": 0,
+		"import/no-duplicates": 1,
+		"import/order": 0,
+		"import/newline-after-import": 1,
+		"import/no-named-as-default-member": 0,
+		"import/namespace": 0,
+		"import/named": 0,
+		"import/no-dynamic-require": 1,
+		"default-case": 1,
+		"array-callback-return": 1,
+		"jsx-a11y/anchor-is-valid": 0,
+		"jsx-a11y/click-events-have-key-events": 0,
+		"jsx-a11y/no-static-element-interactions": 0,
+		"jsx-a11y/label-has-for": 0,
+		"jsx-a11y/iframe-has-title": 0,
+		"jsx-a11y/control-has-associated-label": 0,
+		"react/jsx-wrap-multilines": [
+			2,
+			{
+				"declaration": "parens-new-line",
+				"assignment": "parens-new-line",
+				"return": "parens-new-line",
+				"arrow": "ignore",
+				"condition": "ignore",
+				"logical": "ignore",
+				"prop": "ignore"
+			}
+		],
+		"react/jsx-filename-extension": 0,
+		"react/jsx-indent": 0,
+		"react/jsx-boolean-value": 0,
+		"react/jsx-closing-tag-location": 0,
+		"react/jsx-closing-bracket-location": 0,
+		"react/button-has-type": 0,
+		"react/prop-types": 0,
+		"react/jsx-tag-spacing": [
+			2,
+			{
+				"beforeSelfClosing": "always"
+			}
+		],
+		"react/jsx-one-expression-per-line": 0,
+		"react/jsx-curly-spacing": 0,
+		"react/no-access-state-in-setstate": 0,
+		"react/destructuring-assignment": 0,
+		"react/jsx-no-bind": 1,
+		"react/require-default-props": 1,
+		"react/display-name": 1,
+		"react/jsx-first-prop-new-line": 0,
+		"react/jsx-props-no-spreading": 0,
+		"react/static-property-placement": 0,
+		"react/state-in-constructor": 0,
+		"@typescript-eslint/indent": 0,
+		"@typescript-eslint/camelcase": 0,
+		"@typescript-eslint/explicit-function-return-type": 0,
+		"@typescript-eslint/no-non-null-assertion": 0,
+		"@typescript-eslint/no-use-before-define": 1,
+		"@typescript-eslint/member-delimiter-style": 0,
+		"@typescript-eslint/no-unused-vars": 1,
+		"@typescript-eslint/explicit-member-accessibility": 0,
+		"@typescript-eslint/no-angle-bracket-type-assertion": 0,
+		"@typescript-eslint/explicit-module-boundary-types": 0,
+		"@typescript-eslint/ban-types": 1,
+		"@typescript-eslint/no-explicit-any": 1,
+		"prettier/prettier": [
+			1,
+			{
+				"arrowParens": "always",
+				"bracketSpacing": false,
+				"htmlWhitespaceSensitivity": "css",
+				"insertPragma": false,
+				"jsxBracketSameLine": false,
+				"jsxSingleQuote": false,
+				"printWidth": 80,
+				"proseWrap": "preserve",
+				"quoteProps": "as-needed",
+				"requirePragma": false,
+				"semi": true,
+				"singleQuote": false,
+				"tabWidth": 2,
+				"trailingComma": "all",
+				"useTabs": false,
+				"vueIndentScriptAndStyle": false
+			}
+		]
+	}
+}

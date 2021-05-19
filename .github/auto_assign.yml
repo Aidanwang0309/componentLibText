@@ -1,0 +1,23 @@
+# Set to true to add reviewers to pull requests
+addReviewers: true
+
+# Set to true to add assignees to pull requests
+addAssignees: false
+
+# A list of reviewers to be added to pull requests (GitHub user name)
+reviewers:
+  - Aidanwang0309
+  - BrendanRomanDev
+  - cfowler650
+  - fatsoflo
+  - imsanchez
+  - mafzal
+  - mbayefaye
+  - KingAtoki
+
+# A number of reviewers added to the pull request
+numberOfReviewers: 2
+
+# A list of keywords to be skipped the process that add reviewers if pull requests include it
+skipKeywords:
+  - wip

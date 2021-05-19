@@ -1,0 +1,7 @@
+node_modules
+storybook-static
+build
+.DS_Store
+.cache-loader
+.history
+dist

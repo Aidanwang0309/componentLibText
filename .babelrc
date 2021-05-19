@@ -1,0 +1,36 @@
+{
+  "env": {
+    "production": {
+      "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react",
+        "@babel/preset-typescript"
+      ],
+      "plugins": [
+        ["transform-class-properties"],
+        [
+          "module-resolver",
+          {
+            "root": ["./"],
+            "alias": {
+              "@components": "./src/components",
+              "@config": "./src/configProvider",
+              "@utils": "./src/utils",
+              "@type": "./src/type",
+              "@hooks": "./src/hooks",
+              "@hoc": "./src/hoc",
+              "@templateComponents": "./src/templateComponents",
+              "@constants": "./src/constants",
+              "@styles": "./src/styles"
+            }
+          }
+        ]
+      ],
+      "ignore": ["**/stories", "**/*.stories.js", "**/*.test.js"],
+      "exclude": ["*.stories.tsx"]
+    },
+    "test": {
+      "presets": ["es2015", "react", "stage-0"]
+    }
+  }
+}
